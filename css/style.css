@@ -1,0 +1,77 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	cursor: pointer;
+}
+
+* {
+	-webkit-touch-callout: none;
+	/*系统默认菜单被禁用*/
+	-webkit-user-select: none;
+	/*webkit浏览器*/
+	-khtml-user-select: none;
+	/*早期浏览器*/
+	-moz-user-select: none;
+	/*火狐*/
+	-ms-user-select: none;
+	/*IE10*/
+	user-select: none;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	/* For some Androids */
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+#score {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 2em;
+	font-weight: 900;
+}
+
+#introduction {
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	font-weight: 600;
+	font-size: 0.8em;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	transition: opacity 2s;
+}
+
+#restart {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	border-radius: 50%;
+	color: white;
+	background-color: red;
+	border: none;
+	font-weight: 700;
+	font-size: 1.2em;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: none;
+	cursor: pointer;
+}
+
+#perfect {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 2s;
+}
